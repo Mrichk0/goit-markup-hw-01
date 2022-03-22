@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Titan+One&display=swap");
+    </style>
+    <!-- <link rel="stylesheet" href="./ice.css">  -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="modal-open">
+    <header class="header">
+      hjkhfjffhjghk
+      <div class="container">
+        <nav class="header__menu" data-menu>
+          <button class="header__menu--button">Buy now &#62;</button>
+          <ul class="header__nav">
+            <li><a class="header__list" href="">Home</a></li>
+            <li><a class="header__list" href="">About us</a></li>
+            <li><a class="header__list" href="#How">How it&#39;s made?</a></li>
+            <li><a class="header__list" href="">Our products</a></li>
+            <li><a class="header__list" href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header_button-crup">
+          <button
+            type="button"
+            class="header__button is-open"
+            aria-expanded="false"
+            data-header__button
+          >
+            <svg width="20" height="20" aria-label="mobil menu ">
+              <use
+                class="header__icon--cross"
+                href="../src/images/icons.svg#icon-cross"
+              ></use>
+              <use
+                class="header__icon--menu"
+                href="../src/images/icons.svg#icon-burger"
+              ></use>
+            </svg>
+          </button>
+          <button class="header__nav--button">Buy now &#62;</button>
+        </div>
+        <!-- <a href="">
+    <img class="header__logo" src="./images/logo.png" alt="logo" width="200" />
+  </a> -->
+        <h2 class="header__taitle">
+          ice cream made with
+          <span class="header__taitle--emphasis">passion</span>
+        </h2>
+        <div class="header__button--block">
+          <button class="header__button--first" href="">Products</button>
+          <button href="#How" class="header__button--second">
+            How it’s made?
+          </button>
+        </div>
+        <div class="header__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </div>
+        <ul>
+          <li class="header__element">
+            <p class="header__number">16</p>
+            <p class="header__number--name">cafes</p>
+          </li>
+          <li class="header__element">
+            <p class="header__number">23</p>
+            <p class="header__number--name">food trucks</p>
+          </li>
+        </ul>
+      </div>
+    </header>
+    ...
+    <section class="about" id="How">
+      <div class="container">
+        <label class="about__lable">tradition and love</label>
+        <h2 class="about__title">how it’s made?</h2>
+        <div class="about__content">
+          <picture class="about__picture">
+            <source srcset="./src/" media="(min-width: 768px)" />
+            <source
+              srcset="
+                ../src/images/desktop/99-1200@1x.png 1x,
+                ./src/images/mobile/cow-320@2x.png   2x
+              "
+              media="(min-width: 480px)"
+            />
+            <img src="../src/images/desktop/cow-1200@1x.png" alt="cow" />
+          </picture>
+
+          <div class="about__blok">
+            <p class="about__text">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+              erat at justo fringilla.
+            </p>
+            <p class="about__text--second">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              Cras massa nibh, tincidunt. <br /><br />
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
+            <button type="button" class="about__botton" data-modal-open>
+              Read more
+            </button>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <h2 class="visually-hidden">advantages</h2>
+        <ul class="advantages__blok">
+          <li class="advantages__element">
+            <h3 class="advantages__title">721</h3>
+            <p class="advantages__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+          <li class="advantages__element">
+            <h3 class="advantages__title">16kg</h3>
+            <p class="advantages__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+          <li class="advantages__element">
+            <h3 class="advantages__title">84</h3>
+            <p class="advantages__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal__body">
+          <p class="modal__text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla. Curabitur lacinia enim at ex blandit, vel
+            pellentesque odio elementum. Mauris rhoncus orci in imperdiet
+            placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
+            feugiat urna maximus. Cras massa nibh, tincidunt. <br /><br />
+            Aliquam erat volutpat. Aenean accumsan. Fusce ut velit laoreet,
+            tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt. <br /><br />
+            Aliquam erat volutpat. Aenean accumsan.Fusce ut velit laoreet,
+            tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt. <br /><br />
+            Aliquam erat volutpat. Aenean accumsan.
+          </p>
+          <button class="modal__button" data-modal-close>X</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

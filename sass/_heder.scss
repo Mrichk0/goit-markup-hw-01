@@ -8,77 +8,30 @@
   background-repeat: no-repeat;
   background-position: bottom 0px right 32px, bottom 75px right -50px;
   height: 502px;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   // width: 480px;
+  // }
   @media screen and (min-width: 768px) {
-    width: 768px;
+    // width: 768px;
     padding: 38px, 34px;
     background-image: url(../images/icecream.png), url(../images/slidergirl.png),
-      url(../images/Ellipse.png), url(../images/slidermilk.png),
-      url(../images/Group16.png), url(../images/Group23.png);
-    background-size: 143px, 168px, 323px, 124px, 43px, 51px;
+      url(../images/Ellipse.png), url(../images/slidermilk.png);
+    background-size: 143px, 168px, 323px, 124px;
     background-position: bottom 0px right 247px, bottom 0px right 34px,
-      bottom 45px right 137px, bottom 28px left 34px, top 94px right 34px,
-      top 150px right 34px;
+      bottom 45px right 137px, bottom 28px left 34px;
     height: 399px;
   }
   @media screen and (min-width: 1280px) {
-    width: 1280px;
+    // width: 1280px;
     height: 665px;
     background-image: url(../images/icecream.png), url(../images/slidergirl.png),
-      url(../images/Ellipse.png), url(../images/slidermilk.png),
-      url(../images/Group16.png), url(../images/Group23.png);
-    background-size: 236px, 293px, 538px, 188px, 72px, 92px;
+      url(../images/Ellipse.png), url(../images/slidermilk.png);
+    background-size: 236px, 293px, 538px, 188px;
     background-position: bottom 0px right 450px, bottom 0px right 110px,
-      bottom 76px right 268px, bottom 46px left 76px, top 155px right 98px,
-      top 247px right 98px;
+      bottom 76px right 268px, bottom 46px left 76px;
   }
 }
-.header__menu {
-  text-align: center;
-  font-size: 20px;
-  &.is-open {
-    display: block;
-    transform: translateX(0);
-  }
-  @media screen and (max-width: 1279px) {
-    position: absolute;
-    display: none;
-    transform: translateX(-100%);
-    transition: transform 8500ms;
-    top: 0;
-    right: 0;
-    width: 255px;
-    height: 100%;
-    background-color: #e17992;
-  }
-}
-.header__nav {
-  @media screen and (min-width: 1280px) {
-    display: inline-flex;
-    padding-top: 50px;
-    justify-content: center;
-  }
-}
-.header__list:not(:last-child) {
-  margin-right: 30px;
-}
-.header__list {
-  text-decoration: none;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.28;
-  color: #ffffff;
-  margin-right: 30px;
 
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 21px;
-  }
-}
 .header__logo {
   padding-left: 20px;
   padding-top: 6px;
@@ -112,7 +65,7 @@
     font-size: 22px;
     line-height: 1.13;
     padding-left: 34px;
-    padding-top: 20px;
+    padding-top: 102px;
   }
   @media screen and (min-width: 1280px) {
     width: 277px;
@@ -172,7 +125,7 @@
       display: block;
       margin-top: 8px;
       height: 18px;
-      background-image: url(../images/arrow-right.png);
+      // background-image: url(../images/arrow-right.png);
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -181,87 +134,66 @@
     }
   }
 }
-// .header__nober {
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-//   @media screen and (min-width: 768px) {
-//     position: absolute;
-//     left: 690px;
-//     top: 96px;
-//     // display: block;
-//     // width: 43px;
-//     padding: 0;
-//     margin: 0;
-//     background-image: url(../images/Ellipse2.png);
-//     background-repeat: no-repeat;
-//     background-position: top 94px, right 34px;
-//     font-family: Titan One;
-//     font-size: 28px;
-//     line-height: 1.14;
-//     text-transform: uppercase;
-//     color: #d41443;
-//   }
-// }
-// .header__nober--second {
-//   @media screen and (max-width: 767px) {
-//     display: none;
-//   }
-//   @media screen and (min-width: 768px) {
-//     position: absolute;
-//     left: 690px;
-//     top: 151px;
-//     display: block;
-//     width: 43px;
-
-//     font-family: Titan One;
-//     font-size: 28px;
-//     line-height: 1.14;
-//     text-transform: uppercase;
-//     color: #d41443;
-//   }
-// }
-// .header__nober--name {
-//   font-family: "DM Sans";
-//   text-transform: lowercase;
-//   font-weight: 400;
-//   font-size: 8px;
-//   line-height: 10px;
-//   text-align: right;
-//   color: #ffffff;
-// }
-.header__button {
+.header__element {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  @media screen and (min-width: 768px) {
-    top: 20px;
-    right: 20px;
-  }
+  z-index: 2;
+  top: 94px;
+  right: 34px;
+  display: block;
+  text-align: right;
   @media screen and (min-width: 1280px) {
+    top: 160px;
+    right: 100px;
+  }
+
+  &:last-child {
+    top: 151px;
+    @media screen and (min-width: 1280px) {
+      top: 250px;
+    }
+  }
+}
+.header__number {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-}
-.header__button.is-open {
-  @media screen and (min-width: 768px) {
-    top: 52px;
-    right: 225px;
+  font-family: Titan One;
+  font-size: 28px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #d41443;
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+
+  &::before {
+    // position: absolute;
+    // z-index: 1;
+    content: "";
+    display: block;
+    // right: -7px;
+    // bottom: 28px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/Ellipse2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
-.header__button .header__icon--menu {
-  display: none;
-}
-.header__button.is-open .header__icon--menu {
+.header__number--name {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   display: block;
+  font-family: "DM Sans";
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
 }
-.header__button.is-open .header__icon--cross {
-  display: none;
-}
+
 .header__button--block {
   padding-left: 20px;
   @media screen and (min-width: 768px) {

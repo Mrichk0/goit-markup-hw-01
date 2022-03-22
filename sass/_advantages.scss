@@ -1,20 +1,19 @@
 .advantages {
   background-color: #fff5f6;
-  list-style: none;
   padding-top: 40px;
-  margin: auto;
   padding-bottom: 100px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
+  //   @media screen and (min-width: 480px) {
+  //     width: 480px;
+  //   }
+  //   @media screen and (min-width: 768px) {
+  //     width: 768px;
+  //   }
+  //   @media screen and (min-width: 1280px) {
+  //     width: 1280px;
+  //   }
 }
+
 .advantages__blok {
   padding-left: 20px;
   padding-right: 70px;
@@ -56,15 +55,15 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-  &:nth-child(1)::before {
-    background-image: url("../images/pnj/icon1.png");
-  }
-  &:nth-child(2)::before {
-    background-image: url("../images/pnj/icon1\ \(1\).png");
-  }
-  &:nth-child(3)::before {
-    background-image: url("../images/pnj/icon1\ \(2\).png");
-  }
+  // &:nth-child(1)::before {
+  //   background-image: url("../images/pnj/icon1.png");
+  // }
+  // &:nth-child(2)::before {
+  //   background-image: url("../images/pnj/icon1\ \(1\).png");
+  // }
+  // &:nth-child(3)::before {
+  //   background-image: url("../images/pnj/icon1\ \(2\).png");
+  // }
 }
 .advantages__title {
   list-style: none;
